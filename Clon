@@ -1,86 +1,70 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css" >
-    <title>Google</title>
+    <title>Clon de Google</title>
+    <style>
+        /* Configura el cuerpo */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f2f2f2;
+            position: relative;
+        }
+
+        /* Estilo para la imagen de perfil */
+        .profile-pic {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%; /* Hace que la imagen sea circular */
+            object-fit: cover; /* Asegura que la imagen se ajuste dentro del círculo */
+            cursor: pointer; /* Cursor de mano como en Google */
+        }
+
+        /* Caja de búsqueda */
+        .search-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Logo de Google */
+        .google-logo {
+            font-size: 2rem;
+            color: #4285F4;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* Barra de búsqueda */
+        .search-bar {
+            width: 400px;
+            padding: 10px;
+            border: 1px solid #dcdcdc;
+            border-radius: 24px;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
-     <!-- HEADER - NAVEGADOR-->
-    <header>
-        <!--nav aporta navegación dentro de la página-->
-       <nav>
-            <ul class="nav-right-section">
-                <li class="gmail-reference">
-                    <a href="https://mail.google.com/mail/u/1/?ogbl#inbox">Gmail</a>
-                </li>
-                <li class="images-reference">
-                    <a href="https://www.google.com.mx/imghp?hl=es&authuser=1&ogbl">Imágenes</a>
-                </li>
 
-                <li class="menu"><a href=" "></a></li>
-                
-                <li>
-                      <img src="https://lh3.googleusercontent.com/ogw/AOLn63Hf8hyiw--6ziPrpcBxWaRvc-av1YfCHTe6sq0I_A=s32-c-mo" alt="Foto Saleth">
-                    
-                </li>
-            </ul>
-       </nav>
-    </header>
+    <!-- Caja de búsqueda y logo -->
+    <div class="search-box">
+        <div class="google-logo">Google</div>
+        <input type="text" class="search-bar" placeholder="Buscar en Google">
+    </div>
 
+    <!-- Imagen de perfil -->
+    <img src="https://lh3.googleusercontent.com/a/ACg8ocIbwxxvqEqTqv-5AIV1_7DuyMTUPoPW17DKzY2Sc-1tzHSWxLg=s288-c-no" alt="Foto de perfil" class="profile-pic">
 
-    <main>
-        <section class="main-logo">
-            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Icon">
-        </section>
-        <section class="main-input">
-            <div class="main-input-container">
-                <span class="search-icon"></span>
-                    <input type="text">
-                <a class="micro-icon" href=""></a>   
-                <a class="cam-icon" href=""></a>
-            </div>
-        </section>
-        <section class="main-buttons">
-            <div>
-                <button>Buscar con Google</button>
-    
-            </div>
-            <div>
-                <button >Salir de Google</button>
-            </div>
-            
-        </section>
-
-    </main>
-
-
-    <footer>
-        <ul class="footer-left">
-            <li>
-                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiy48ay7bn-AhW0J0QIHUG1C5wQkNQCCBI&url=https%3A%2F%2Fabout.google%2F%3Futm_source%3Dgoogle-MX%26utm_medium%3Dreferral%26utm_campaign%3Dhp-footer%26fg%3D1&usg=AOvVaw09qQxZE2XyQ825PN7qaVq3">Sobre Google</a>
-            </li>
-            <li>
-                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiy48ay7bn-AhW0J0QIHUG1C5wQkdQCCBM&url=https%3A%2F%2Fwww.google.com%2Fintl%2Fes_mx%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw2lcoxYn7iM7OKN4FxFxjl0">Publicidad</a>
-            </li>
-            <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiy48ay7bn-AhW0J0QIHUG1C5wQktQCCBQ&url=https%3A%2F%2Fwww.google.com%2Fservices%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&usg=AOvVaw2SJ4zwRVXKyZr53qG9dm4K">Negocios</a>
-            </li>
-            <li><a href="https://google.com/search/howsearchworks/?fg=1">Cómo funciona la Búsqueda</a>
-            </li>
-        </ul>
-        <ul class="footer-right">
-            <li>
-                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiy48ay7bn-AhW0J0QIHUG1C5wQ8awCCBU&url=https%3A%2F%2Fpolicies.google.com%2Fprivacy%3Fhl%3Des-MX%26fg%3D1&usg=AOvVaw2FjvAhBHkMSqySxUI2Or4U">Privacidad</a>
-            </li>
-            <li>
-                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwiy48ay7bn-AhW0J0QIHUG1C5wQ8qwCCBY&url=https%3A%2F%2Fpolicies.google.com%2Fterms%3Fhl%3Des-MX%26fg%3D1&usg=AOvVaw1X7Z5gDlpIkfgOwxqoXiHX">Condiciones</a>
-            </li>
-            <li>
-                <a href="0">Preferencias</a>
-            </li>
-        </ul>
-    </footer>
 </body>
 </html>
